@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ProductsListContext } from "../contexts/productsList";
+import "./productsField.css";
 
 import Product from "./Product";
 
