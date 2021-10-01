@@ -1,0 +1,14 @@
+.btn {
+  width: 10rem;
+  height: 2rem;
+  background-color: var(--secondary);
+  border-radius: 0.2rem;
+  font: 1.3rem var(--default-font);
+  color: #ffff;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--red);
+}
