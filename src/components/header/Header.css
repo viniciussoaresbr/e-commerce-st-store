@@ -1,0 +1,17 @@
+.header {
+  height: 4rem;
+  width: 100vw;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title {
+  font: 2.5rem var(--secondary-font);
+  color: #ffff;
+}
+
+.header__title-red {
+  color: var(--red);
+}
