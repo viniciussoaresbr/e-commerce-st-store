@@ -1,17 +1,37 @@
 .header {
-  height: 4rem;
   width: 100vw;
+  height: 4rem;
   background-color: var(--primary);
-  display: flex;
+  display: grid;
+  grid-template-columns: 95vw 5vw;
+  grid-template-rows: auto;
+  grid-template-areas: "title cart";
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 
+#headerPipe-green {
+  box-shadow: inset -6px 0px 0px 0px #2dc653;
+  transition: all ease 0.5s;
+}
+
+#headerPipe-red {
+  box-shadow: inset -6px 0px 0px 0px var(--red);
+  transition: all ease 0.5s;
+}
 .header__title {
   font: 2.5rem var(--secondary-font);
   color: #ffff;
+  grid-area: title;
 }
 
 .header__title-red {
   color: var(--red);
+}
+
+.header__cart {
+  height: 2rem;
+  width: 2.5rem;
+  grid-area: cart;
+  cursor: pointer;
 }
