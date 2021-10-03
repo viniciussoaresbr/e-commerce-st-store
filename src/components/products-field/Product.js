@@ -4,7 +4,7 @@ import { CartContext } from "../contexts/Cart";
 import "./Product.css";
 
 const Product = ({ product }) => {
-  const { addProduct } = useContext(CartContext);
+  const { addProduct, incrementShipping } = useContext(CartContext);
 
   return (
     <div className="product">
@@ -21,6 +21,7 @@ const Product = ({ product }) => {
           text="Adicionar ao carrinho"
           handleClick={() => {
             addProduct(product);
+            incrementShipping();
           }}
         />
       </section>
