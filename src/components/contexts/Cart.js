@@ -4,7 +4,6 @@ export const CartContext = createContext({});
 
 const CartProvider = ({ children }) => {
   const [cartProducts, setCartProducts] = useState([]);
-  const [shipping, setShipping] = useState(0);
 
   const addProduct = (product) => {
     let quantity = 1;
@@ -41,15 +40,16 @@ const CartProvider = ({ children }) => {
     );
   };
 
-  const incrementShipping = () => {
-    setShipping(shipping + 10);
+  const calcShipping = () => {
+    const shipping = 10;
+    let totalAmount = cartProducts.reduce(
+      (prevValue, item) => prevValue + item.quantity,
+      0
+    );
+    return shipping * totalAmount;
   };
 
-  const decreaseShipping = () => {
-    setShipping(shipping - 10);
-  };
-
-  const calcTotalPrice = (subTotalPrice) => {
+  const calcTotalPrice = (subTotalPrice, shipping) => {
     if (subTotalPrice < 250) {
       return subTotalPrice + shipping;
     } else {
@@ -65,9 +65,7 @@ const CartProvider = ({ children }) => {
         removeProduct,
         calcSubTotalPrice,
         calcTotalPrice,
-        incrementShipping,
-        decreaseShipping,
-        shipping,
+        calcShipping,
       }}
     >
       {children}
