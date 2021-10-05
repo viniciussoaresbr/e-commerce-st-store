@@ -13,10 +13,47 @@ const ProductListProvider = ({ children }) => {
       });
   }, []);
 
+  const orderProducts = (order) => {
+    switch (order) {
+      case "alphabeticalOrder":
+        setProducts([
+          ...products.sort((a, b) => {
+            return a.name < b.name ? -1 : 1;
+          }),
+        ]);
+        break;
+      case "score":
+        setProducts([
+          ...products.sort((a, b) => {
+            return a.score > b.score ? -1 : 1;
+          }),
+        ]);
+        break;
+      case "lowerPrice":
+        setProducts([
+          ...products.sort((a, b) => {
+            return a.price < b.price ? -1 : 1;
+          }),
+        ]);
+        break;
+      case "higherPrice":
+        setProducts([
+          ...products.sort((a, b) => {
+            return a.price > b.price ? -1 : 1;
+          }),
+        ]);
+        break;
+      default:
+        // do nothing;
+        break;
+    }
+  };
+
   return (
     <ProductsListContext.Provider
       value={{
         products,
+        orderProducts,
       }}
     >
       {children}
