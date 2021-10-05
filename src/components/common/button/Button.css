@@ -12,3 +12,11 @@
 .btn:hover {
   background-color: var(--red);
 }
+
+#btn-finish {
+  background-color: var(--primary);
+}
+
+#btn-finish:hover {
+  transform: scale(1.1);
+}
