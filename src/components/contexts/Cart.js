@@ -5,7 +5,7 @@ export const CartContext = createContext({});
 const CartProvider = ({ children }) => {
   const [cartProducts, setCartProducts] = useState([]);
 
-  const addProduct = (product) => {
+  const addProductToCart = (product) => {
     let quantity = 1;
     product.quantity = quantity;
     let existProduct = cartProducts.some((item) => item.id === product.id);
@@ -25,7 +25,7 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  const removeProduct = (index) => {
+  const removeProductFromCart = (index) => {
     setCartProducts(
       cartProducts.filter((product, i) => {
         return index !== i;
@@ -60,9 +60,9 @@ const CartProvider = ({ children }) => {
   return (
     <CartContext.Provider
       value={{
-        addProduct,
+        addProductToCart,
         cartProducts,
-        removeProduct,
+        removeProductFromCart,
         calcSubTotalPrice,
         calcTotalPrice,
         calcShipping,

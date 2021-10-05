@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../contexts/Cart";
 import "./CartProduct.css";
 const CartProduct = ({ cartProduct, index }) => {
-  const { removeProduct } = useContext(CartContext);
+  const { removeProductFromCart } = useContext(CartContext);
 
   return (
     <section className="cartProduct" key={cartProduct.id}>
@@ -17,7 +17,7 @@ const CartProduct = ({ cartProduct, index }) => {
       <span
         className="cartProduct__remove"
         onClick={() => {
-          removeProduct(index);
+          removeProductFromCart(index);
         }}
       >
         X
