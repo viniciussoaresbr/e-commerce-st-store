@@ -101,3 +101,15 @@
   font-weight: 700;
   color: #ffff;
 }
+
+@media (max-width: 767px) {
+  .cartField {
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .cartField-hidden {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
