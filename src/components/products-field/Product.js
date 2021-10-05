@@ -9,7 +9,7 @@ const Product = ({ product }) => {
   return (
     <div className="product">
       <img
-        alt="cardGame"
+        alt=""
         className="product__image"
         src={require(`../../assets/${product.image}`).default}
       />

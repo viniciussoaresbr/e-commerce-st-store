@@ -7,6 +7,7 @@ const CartProduct = ({ cartProduct, index }) => {
   return (
     <section className="cartProduct" key={cartProduct.id}>
       <img
+        alt=""
         className="cartProduct__image"
         src={require(`../../assets/${cartProduct.image}`).default}
       />

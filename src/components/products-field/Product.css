@@ -21,7 +21,6 @@
 
 .product__title {
   font: 1.3rem var(--default-font);
-  color: var(--secondary-dark);
 }
 
 .product__price {

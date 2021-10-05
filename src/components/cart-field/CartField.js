@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../contexts/Cart";
 import "./CartField.css";
 import CartProduct from "./CartProduct";
+import Button from "../common/button/Button";
 
 const CartField = ({ classCart, classOverlay, closeCart = () => {} }) => {
   const { cartProducts, calcSubTotalPrice, calcTotalPrice, calcShipping } =
@@ -17,6 +18,7 @@ const CartField = ({ classCart, classOverlay, closeCart = () => {} }) => {
       <section className={classCart}>
         <header className="cartHeader">
           <img
+            alt=""
             className="cartHeader__closeIcon"
             src={require("../../assets/iconmonstr-arrow-68.svg").default}
             onClick={() => {
@@ -38,6 +40,7 @@ const CartField = ({ classCart, classOverlay, closeCart = () => {} }) => {
             } `}</h1>
             <h1>{`TOTAL: R$ ${TotalPrice.toFixed(2)} `}</h1>
           </div>
+          <Button text="Finalizar Compra" myId="btn-finish" />
         </section>
       </section>
     </>
