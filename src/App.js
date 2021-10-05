@@ -3,7 +3,7 @@ import ProductListProvider from "./components/contexts/productsList";
 import ProductsField from "./components/products-field/ProductsField";
 import CartProvider from "./components/contexts/Cart";
 import Header from "./components/header/Header";
-import Filter from "./components/filter/Filter";
+import Order from "./components/order/Order";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <ProductListProvider>
         <CartProvider>
           <Header />
-          <Filter />
+          <Order />
           <ProductsField />
         </CartProvider>
       </ProductListProvider>
