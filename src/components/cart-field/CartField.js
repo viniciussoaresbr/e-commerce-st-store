@@ -40,7 +40,7 @@ const CartField = ({ classCart, classOverlay, closeCart = () => {} }) => {
             } `}</h1>
             <h1>{`TOTAL: R$ ${TotalPrice.toFixed(2)} `}</h1>
           </div>
-          <Button text="Finalizar Compra" myId="btn-finish" />
+          <Button text="Finalizar Compra" myId="btn--finish" />
         </section>
       </section>
     </>

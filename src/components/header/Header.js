@@ -10,10 +10,10 @@ const Header = () => {
     <>
       <header
         className="header"
-        id={cartProducts.length > 0 ? "headerPipe-green" : "headerPipe-red"}
+        id={cartProducts.length > 0 ? "headerPipe--green" : "headerPipe--red"}
       >
         <h1 className="header__title">
-          St <span className="header__title-red">Store</span>
+          St <span className="header__title--red">Store</span>
         </h1>
         <img
           alt=""
@@ -25,8 +25,8 @@ const Header = () => {
         ></img>
       </header>
       <CartField
-        classOverlay={showCart ? "overlay" : "overlay-none"}
-        classCart={showCart ? "cartField" : "cartField-hidden"}
+        classOverlay={showCart ? "overlay" : "overlay--none"}
+        classCart={showCart ? "cartField" : "cartField--hidden"}
         closeCart={() => {
           setShowCart(false);
         }}

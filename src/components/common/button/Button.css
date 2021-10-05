@@ -13,10 +13,10 @@
   background-color: var(--red);
 }
 
-#btn-finish {
+#btn--finish {
   background-color: var(--primary);
 }
 
-#btn-finish:hover {
+#btn--finish:hover {
   transform: scale(1.1);
 }

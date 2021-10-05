@@ -8,7 +8,7 @@
   z-index: 1;
 }
 
-.overlay-none {
+.overlay--none {
   display: none;
 }
 
@@ -29,7 +29,7 @@
   transition: all ease 0.6s;
 }
 
-.cartField-hidden {
+.cartField--hidden {
   width: 20rem;
   height: 100vh;
   position: fixed;
@@ -108,7 +108,7 @@
     transform: translateX(0);
   }
 
-  .cartField-hidden {
+  .cartField--hidden {
     width: 100%;
     transform: translateX(100%);
   }

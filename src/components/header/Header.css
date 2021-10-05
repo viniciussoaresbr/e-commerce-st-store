@@ -7,12 +7,12 @@
   justify-content: space-between;
 }
 
-#headerPipe-green {
+#headerPipe--green {
   box-shadow: inset -6px 0px 0px 0px #2dc653;
   transition: all ease 0.5s;
 }
 
-#headerPipe-red {
+#headerPipe--red {
   box-shadow: inset -6px 0px 0px 0px var(--red);
   transition: all ease 0.5s;
 }
@@ -22,7 +22,7 @@
   margin-left: 0.8rem;
 }
 
-.header__title-red {
+.header__title--red {
   color: var(--red);
 }
 
