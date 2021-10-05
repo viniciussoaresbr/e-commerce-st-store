@@ -1,0 +1,17 @@
+.order {
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.3rem var(--default-font);
+  background-color: var(--secondary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.order__select {
+  width: 8rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid var(--primary);
+}
