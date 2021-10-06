@@ -1,6 +1,5 @@
 {
   "name": "e-commerce",
-  "homepage": "https://viniciussoaresbr.github.io/e-commerce-st-store/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
