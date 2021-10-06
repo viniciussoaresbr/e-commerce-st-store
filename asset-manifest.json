@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/e-commerce-st-store/static/css/main.18b53ddb.chunk.css",
+    "main.js": "/e-commerce-st-store/static/js/main.2906f727.chunk.js",
+    "main.js.map": "/e-commerce-st-store/static/js/main.2906f727.chunk.js.map",
+    "runtime-main.js": "/e-commerce-st-store/static/js/runtime-main.d91bdb27.js",
+    "runtime-main.js.map": "/e-commerce-st-store/static/js/runtime-main.d91bdb27.js.map",
+    "static/js/2.fe20a158.chunk.js": "/e-commerce-st-store/static/js/2.fe20a158.chunk.js",
+    "static/js/2.fe20a158.chunk.js.map": "/e-commerce-st-store/static/js/2.fe20a158.chunk.js.map",
+    "index.html": "/e-commerce-st-store/index.html",
+    "static/css/main.18b53ddb.chunk.css.map": "/e-commerce-st-store/static/css/main.18b53ddb.chunk.css.map",
+    "static/js/2.fe20a158.chunk.js.LICENSE.txt": "/e-commerce-st-store/static/js/2.fe20a158.chunk.js.LICENSE.txt",
+    "static/media/arrow-down-icon.svg": "/e-commerce-st-store/static/media/arrow-down-icon.5e58fb56.svg",
+    "static/media/call-of-duty-infinite-warfare.png": "/e-commerce-st-store/static/media/call-of-duty-infinite-warfare.83332c2a.png",
+    "static/media/call-of-duty-wwii.png": "/e-commerce-st-store/static/media/call-of-duty-wwii.9625ebaa.png",
+    "static/media/cart-icon.svg": "/e-commerce-st-store/static/media/cart-icon.f62597cd.svg",
+    "static/media/fifa-18.png": "/e-commerce-st-store/static/media/fifa-18.fde15021.png",
+    "static/media/horizon-zero-dawn.png": "/e-commerce-st-store/static/media/horizon-zero-dawn.78d27d76.png",
+    "static/media/iconmonstr-arrow-68.svg": "/e-commerce-st-store/static/media/iconmonstr-arrow-68.52dad76f.svg",
+    "static/media/mortal-kombat-xl.png": "/e-commerce-st-store/static/media/mortal-kombat-xl.b5fe094d.png",
+    "static/media/shards-of-darkness.png": "/e-commerce-st-store/static/media/shards-of-darkness.81e9316a.png",
+    "static/media/super-mario-odyssey.png": "/e-commerce-st-store/static/media/super-mario-odyssey.8bf89689.png",
+    "static/media/terra-media-sombras-de-mordor.png": "/e-commerce-st-store/static/media/terra-media-sombras-de-mordor.b45356a2.png",
+    "static/media/the-witcher-iii-wild-hunt.png": "/e-commerce-st-store/static/media/the-witcher-iii-wild-hunt.a6cbe2dc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d91bdb27.js",
+    "static/js/2.fe20a158.chunk.js",
+    "static/css/main.18b53ddb.chunk.css",
+    "static/js/main.2906f727.chunk.js"
+  ]
+}
