@@ -17,7 +17,7 @@ const CartProduct = ({ cartProduct }) => {
       <span
         className="cartProduct__remove"
         onClick={() => {
-          removeProductFromCart(cartProduct.id);
+          removeProductFromCart(cartProduct);
         }}
       >
         X

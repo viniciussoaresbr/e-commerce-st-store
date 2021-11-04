@@ -30,12 +30,24 @@ const CartProvider = ({ children }) => {
           };
         }
       case "REMOVE_PRODUCT_FROM_CART":
-        return {
-          ...state,
-          cartProducts: state.cartProducts.filter(product => {
-            return product.id !== action.payload.id;
-          }),
-        };
+        if (action.payload.product.quantity > 1) {
+          return {
+            ...state,
+            cartProducts: state.cartProducts.map(product => {
+              if (product.id === action.payload.product.id) {
+                return { ...product, quantity: product.quantity - 1 };
+              }
+              return product;
+            }),
+          };
+        } else {
+          return {
+            ...state,
+            cartProducts: state.cartProducts.filter(product => {
+              return product.id !== action.payload.product.id;
+            }),
+          };
+        }
       case "CALC_SUBTOTAL":
         return {
           ...state,
@@ -85,8 +97,8 @@ const CartProvider = ({ children }) => {
     dispatch({ type: "ADD_PRODUCT_TO_CART", payload: { product } });
   };
 
-  const removeProductFromCart = id => {
-    dispatch({ type: "REMOVE_PRODUCT_FROM_CART", payload: { id } });
+  const removeProductFromCart = product => {
+    dispatch({ type: "REMOVE_PRODUCT_FROM_CART", payload: { product } });
   };
 
   const calcSubTotalPrice = () => dispatch({ type: "CALC_SUBTOTAL" });
