@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/e-commerce-st-store/static/css/main.18b53ddb.chunk.css",
-    "main.js": "/e-commerce-st-store/static/js/main.2906f727.chunk.js",
-    "main.js.map": "/e-commerce-st-store/static/js/main.2906f727.chunk.js.map",
+    "main.css": "/e-commerce-st-store/static/css/main.dd0093f9.chunk.css",
+    "main.js": "/e-commerce-st-store/static/js/main.4d2366a2.chunk.js",
+    "main.js.map": "/e-commerce-st-store/static/js/main.4d2366a2.chunk.js.map",
     "runtime-main.js": "/e-commerce-st-store/static/js/runtime-main.d91bdb27.js",
     "runtime-main.js.map": "/e-commerce-st-store/static/js/runtime-main.d91bdb27.js.map",
-    "static/js/2.fe20a158.chunk.js": "/e-commerce-st-store/static/js/2.fe20a158.chunk.js",
-    "static/js/2.fe20a158.chunk.js.map": "/e-commerce-st-store/static/js/2.fe20a158.chunk.js.map",
+    "static/css/2.68fdb14c.chunk.css": "/e-commerce-st-store/static/css/2.68fdb14c.chunk.css",
+    "static/js/2.6a4e3578.chunk.js": "/e-commerce-st-store/static/js/2.6a4e3578.chunk.js",
+    "static/js/2.6a4e3578.chunk.js.map": "/e-commerce-st-store/static/js/2.6a4e3578.chunk.js.map",
     "index.html": "/e-commerce-st-store/index.html",
-    "static/css/main.18b53ddb.chunk.css.map": "/e-commerce-st-store/static/css/main.18b53ddb.chunk.css.map",
-    "static/js/2.fe20a158.chunk.js.LICENSE.txt": "/e-commerce-st-store/static/js/2.fe20a158.chunk.js.LICENSE.txt",
+    "static/css/2.68fdb14c.chunk.css.map": "/e-commerce-st-store/static/css/2.68fdb14c.chunk.css.map",
+    "static/css/main.dd0093f9.chunk.css.map": "/e-commerce-st-store/static/css/main.dd0093f9.chunk.css.map",
+    "static/js/2.6a4e3578.chunk.js.LICENSE.txt": "/e-commerce-st-store/static/js/2.6a4e3578.chunk.js.LICENSE.txt",
     "static/media/arrow-down-icon.svg": "/e-commerce-st-store/static/media/arrow-down-icon.5e58fb56.svg",
     "static/media/call-of-duty-infinite-warfare.png": "/e-commerce-st-store/static/media/call-of-duty-infinite-warfare.83332c2a.png",
     "static/media/call-of-duty-wwii.png": "/e-commerce-st-store/static/media/call-of-duty-wwii.9625ebaa.png",
@@ -25,8 +27,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d91bdb27.js",
-    "static/js/2.fe20a158.chunk.js",
-    "static/css/main.18b53ddb.chunk.css",
-    "static/js/main.2906f727.chunk.js"
+    "static/css/2.68fdb14c.chunk.css",
+    "static/js/2.6a4e3578.chunk.js",
+    "static/css/main.dd0093f9.chunk.css",
+    "static/js/main.4d2366a2.chunk.js"
   ]
 }
