@@ -31,11 +31,13 @@ const CartField = ({ classCart, classOverlay, closeCart = () => {} }) => {
         </div>
         <section className="checkout">
           <div className="checkout__info">
-            <h1>{`SUBTOTAL: R$ ${state.subtotal.toFixed(2)}`}</h1>
+            <h1>
+              {`SUBTOTAL: R$ ${state.subtotal.toFixed(2)}`.replace(".", ",")}
+            </h1>
             <h1>{`FRETE:  ${
               state.subtotal > 250 ? "Grátis" : "R$ " + state.shipping
             } `}</h1>
-            <h1>{`TOTAL: R$ ${state.total.toFixed(2)} `}</h1>
+            <h1>{`TOTAL: R$ ${state.total.toFixed(2)} `.replace(".", ",")}</h1>
           </div>
           <Button text="Finalizar Compra" myId="btn--finish" />
         </section>

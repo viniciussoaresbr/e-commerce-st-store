@@ -15,7 +15,9 @@ const Product = ({ product }) => {
       />
       <section className="product__info">
         <h1 className="product__title">{product.name}</h1>
-        <h2 className="product__price">{`R$ ${product.price}`}</h2>
+        <h2 className="product__price">
+          {`R$ ${product.price}`.replace(".", ",")}
+        </h2>
         <p className="product__score">{`Pontuação: ${product.score}`}</p>
         <Button
           text="Adicionar ao carrinho"
