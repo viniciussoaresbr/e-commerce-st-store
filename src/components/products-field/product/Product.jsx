@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../contexts/CartContext";
 import Button from "../../common/button/Button";
 import "./Product.css";
+import { toast } from "react-toastify";
 
 const Product = ({ product }) => {
   const { addProductToCart } = useContext(CartContext);
@@ -23,6 +24,7 @@ const Product = ({ product }) => {
           text="Adicionar ao carrinho"
           handleClick={() => {
             addProductToCart(product);
+            toast.success("Item adicionado ao carrinho");
           }}
         />
       </section>
