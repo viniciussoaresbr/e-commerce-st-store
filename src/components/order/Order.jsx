@@ -17,7 +17,9 @@ const Order = () => {
       >
         <option value="default" label="Ordenar por:" disabled></option>
         <option value="alphabeticalOrder">A - Z</option>
-        <option value="score">Pontuação</option>
+        <option value="reverseAlphabeticalOrder">Z - A</option>
+        <option value="lowerScore">Menor Pontuação</option>
+        <option value="higherScore">Maior Pontuação</option>
         <option value="lowerPrice">Menor Preço</option>
         <option value="higherPrice">Maior Preço</option>
       </select>

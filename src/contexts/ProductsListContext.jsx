@@ -22,7 +22,21 @@ const ProductListProvider = ({ children }) => {
           }),
         ]);
         break;
-      case "score":
+      case "reverseAlphabeticalOrder":
+        setProducts([
+          ...products.sort((a, b) => {
+            return a.name < b.name ? 1 : -1;
+          }),
+        ]);
+        break;
+      case "lowerScore":
+        setProducts([
+          ...products.sort((a, b) => {
+            return a.score > b.score ? 1 : -1;
+          }),
+        ]);
+        break;
+      case "higherScore":
         setProducts([
           ...products.sort((a, b) => {
             return a.score > b.score ? -1 : 1;
